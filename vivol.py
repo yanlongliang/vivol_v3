@@ -14,10 +14,10 @@ The very beginning mind itself is
 #这仅仅是一个测试
 
 from tornado import web, httpserver, ioloop
-
+str1 = '测试一下看看能不能用！'
 class LoginHandler(web.RequestHandler):
     def get(self, *args, **kwargs):
-        self.write("vivol".center(100, '*'))
+        self.write(str1.center(100, '*'))
 
 application = web.Application([
     (r'/', LoginHandler),
