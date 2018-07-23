@@ -13,4 +13,4 @@ The very beginning mind itself is
 """
 
 
-
+print('测试')
